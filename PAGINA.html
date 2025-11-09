@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CiberEscudo – Escudo Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Roboto', sans-serif; }
+    body { background-color: #f4f6f8; color: #333; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 1200px; margin: auto; padding: 0 20px; }
+
+    /* Header */
+    header { 
+      background: linear-gradient(135deg, #0d3b66, #4b0082); 
+      color: #fff; 
+      padding: 40px 0; 
+      text-align: center; 
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+    header img { max-width: 80px; vertical-align: middle; }
+    header h1 { display: inline-block; margin-left: 15px; font-size: 2.5rem; vertical-align: middle; }
+
+    /* Botones */
+    .btn { display: inline-block; background-color: #ff6f3c; color: #fff; padding: 15px 30px; border-radius: 8px; font-weight: bold; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.2);}
+    .btn:hover { background-color: #ff3c1f; transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+
+    section { padding: 80px 0; }
+
+    /* Introducción con degradado */
+    #intro { 
+      background: linear-gradient(120deg, #6a11cb, #2575fc); 
+      color: #fff; 
+      text-align: center; 
+    }
+    #intro h2 { color: #ffec59; font-size:2.5rem; margin-bottom:20px; }
+    #intro p { color: #ffffff; font-size:1.2rem; max-width: 800px; margin: auto; }
+
+    /* Beneficios */
+    .benefits { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; margin-top: 50px; }
+    .benefit { background: #fff; border-radius: 12px; padding: 35px; width: 260px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.3s; border-top: 5px solid #ff6f3c; }
+    .benefit:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+    .benefit h3 { margin-bottom: 15px; color: #ff6f3c; }
+
+    /* Agenda con fondo degradado y color */
+    #agenda { 
+      background: linear-gradient(135deg, #00c6ff, #0072ff); 
+      color: #fff; 
+    }
+    #agenda h2 { color: #ffec59; text-align: center; font-size: 2.3rem; margin-bottom: 40px; }
+    .agenda { max-width: 900px; margin: auto; }
+    .agenda-item { background: rgba(255, 255, 255, 0.1); padding: 25px; border-radius: 12px; margin-bottom: 18px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s; }
+    .agenda-item:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+    .agenda-item h3 { margin-bottom: 10px; color: #ffec59; }
+
+    /* Registro */
+    .register { text-align: center; }
+    .register p { margin-bottom: 25px; font-size: 1.25rem; color: #333; }
+
+    /* Footer */
+    footer { background-color: #0d3b66; color: #fff; text-align: center; padding: 40px 0; }
+    footer p { margin-bottom: 12px; font-size: 0.95rem; }
+    footer a { color: #ff6f3c; margin: 0 12px; transition: 0.3s; }
+    footer a:hover { color: #fff; }
+
+    /* Responsive */
+    @media(max-width:768px) {
+      .benefits { flex-direction: column; align-items: center; }
+      header h1 { font-size: 2rem; }
+      #intro h2 { font-size: 2rem; }
+      #agenda h2 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="C:/Users/karol/Documents/CUN/9 STRE/NETWORKING/LOGO.png" alt="Logotipo CiberEscudo">
+    <h1>CiberEscudo – Escudo Digital</h1>
+  </header>
+
+  <!-- Introducción / Evento -->
+  <section id="intro">
+    <div class="container">
+      <h2>🔒 Transformamos tu negocio con soluciones seguras 💻🤝</h2>
+      <p>
+        CiberEscudo protege tu sitio web garantizando conexiones seguras mediante <strong>certificados SSL</strong>, cifrando la información de tus usuarios y fortaleciendo la confianza digital de tu negocio.
+      </p>
+      <div class="register" style="margin-top:30px;">
+        <a href="#" class="btn">¡Regístrate Ahora!</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section id="benefits">
+    <div class="container">
+      <h2>Beneficios de asistir</h2>
+      <div class="benefits">
+        <div class="benefit">
+          <h3>Networking Seguro 🤝</h3>
+          <p>Conecta con profesionales y líderes del sector que pueden abrir oportunidades de negocio y colaboración.</p>
+        </div>
+        <div class="benefit">
+          <h3>Aprendizaje práctico 💻</h3>
+          <p>Accede a talleres y charlas sobre implementación, gestión y mejores prácticas de seguridad web.</p>
+        </div>
+        <div class="benefit">
+          <h3>Actualización en tendencias 🔒</h3>
+          <p>Conoce las últimas novedades en protección de datos, confianza digital y tecnologías de cifrado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agenda -->
+  <section id="agenda">
+    <div class="container">
+      <h2>Agenda del Evento 🗓️</h2>
+      <div class="agenda">
+        <div class="agenda-item">
+          <h3>⏰ 9:00 AM - Apertura y Bienvenida</h3>
+          <p>Presentación del evento y objetivos principales.</p>
+        </div>
+        <div class="agenda-item">
+          <h3>🗣️ 10:00 AM - Taller SSL Avanzado</h3>
+          <p>Implementación segura de certificados y mejores prácticas.</p>
+        </div>
+        <div class="agenda-item">
+          <h3>☕ 12:00 PM - Networking y Coffee Break</h3>
+          <p>Conecta con profesionales de la industria en un ambiente seguro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registro -->
+  <section id="register">
+    <div class="container">
+      <h2>Registro</h2>
+      <p>No pierdas tu lugar. ¡Cupos limitados!</p>
+      <a href="#" class="btn">Comprar Entrada</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 CiberEscudo. Todos los derechos rese
